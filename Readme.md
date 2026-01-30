@@ -37,7 +37,7 @@
 
 ### 配置文件说明
 
-创建 `config.json` 文件：
+修改 conf/config.json` 文件：
 
 ```json
 {
@@ -92,22 +92,36 @@
 - 内容：任意 IP（客户端会自动更新）
 - 代理状态：根据需求选择（橙色云朵为开启代理）
 
-### 客户端配置示例
 
-```json
-{
-  "apiKey": "c2547eb745079dac9320b638f5e225cf483cc5cfdda41",
-  "email": "user@example.com",
-  "zoneID": "023e105f4ecef8ad9ca31a8372d0c353",
-  "domain": "example.com",
-  "recordName": "www",
-  "serverIP": "检测服务器IP地址",
-  "serverPort": 8066,
-  "timeout": 10
-}
+## 自动编译指南
+下载
+```bash
+git clone https://github.com/LWZXS/ML-DDNS.git
 ```
 
-## 编译指南
+![img_1.png](img_1.png)
+
+客户端 编译运行
+```bash
+# 编译为 ./bin/ddns-client-go 或 ./bin/ddns-client-c
+cd Client
+bash install.sh
+
+# 运行
+./bin/ddns-client-go 或 ./bin/ddns-client-c
+```
+
+服务端 编译运行
+```bash
+# 编译为 ./bin/server
+cd Server
+bash build_c.sh
+
+# 运行
+./bin/server
+```
+
+## 手动编译指南
 
 ### 客户端库文件编译
 

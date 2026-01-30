@@ -28,6 +28,8 @@ echo "编译 Go 版本客户端..."
 
 # 编译主程序
 echo "编译 main.go..."
+mkdir bin
+rm ./bin/ddns-client-go main.go
 go build -o ./bin/ddns-client-go main.go
 
 echo "Go 版本编译完成！"

@@ -29,7 +29,8 @@ echo "编译 C 版本客户端..."
 echo "编译 main.c..."
 export DYLD_LIBRARY_PATH=./libs:.
 rm ./bin/ddns-client-c
-gcc -o ./bin/ddns-client-c main.c -I./libs -L./libs -lpublic_address_detector -lcloudflare_ddns
+mkdir bin
+gcc -o ./bin/ddns-client-c main.c -I./libs -L./libs -lpublic_address_detector -lcloudflare_ddns -Wl,-rpath=./libs
 
 echo "C 版本编译完成！"
 echo "可执行文件: ./bin/ddns-client-c"
