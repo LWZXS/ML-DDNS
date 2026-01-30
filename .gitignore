@@ -10,7 +10,6 @@
 *.dylib
 
 # 客户端特定忽略
-Client/conf/
 Client/test/
 Client/ddns_monitor.log
 Client/*.log
