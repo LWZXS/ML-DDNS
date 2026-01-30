@@ -10,13 +10,10 @@
 *.dylib
 
 # 客户端特定忽略
-Client/test/
 Client/ddns_monitor.log
 Client/*.log
 
 # 配置文件（包含敏感信息）
-config.json
-*.conf
 *.config
 .env
 .env.local

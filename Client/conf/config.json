@@ -1,0 +1,10 @@
+{
+  "apiKey": "YOUR_CLOUDFLARE_API_KEY_HERE",
+  "email": "your-email@example.com",
+  "zoneID": "YOUR_ZONE_ID_HERE",
+  "domain": "example.com",
+  "recordName": "www",
+  "serverIP": "your-server-ip-here",
+  "serverPort": 8066,
+  "timeout": 10
+}
